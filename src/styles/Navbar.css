@@ -1,0 +1,128 @@
+.navbar{
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    /* width: 100%; */
+    background-color: white;
+    margin: 0px auto;
+    z-index: 10;
+}
+
+.navbar-contain{
+    max-width: 1480px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list ul{
+    display: flex;
+    gap: 10px;
+}
+
+.nav-list ul li{
+    list-style: none;
+}
+
+/* media Query */
+.nav-media{
+    display: none;
+}
+
+.nav-media-det{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#hamburger{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+#one,#two,#three{
+    width: 25px;
+    height: 3px;
+    border: 30px;
+    background-color: rgb(224, 15, 15);
+    transition: .4s ease-in;
+}
+
+#ones, #twos, #threes{
+    width: 25px;
+    height: 3px;
+    border-radius: 30px;
+    background-color: rgb(224, 15, 15);
+    transition: .4s ease-in;
+}
+
+#ones{
+    transform: rotate(45deg) translateX(5px);
+}
+
+#twos{
+    transform: rotate(135deg) translateX(-5px);
+}
+
+#threes{
+    opacity: 0;
+    /* transform: rotate(135deg) translate(-10px, 10px); */
+}
+
+.media-cover{
+    display: none;
+    position: absolute;
+    transform: translateY(-180px);
+    left: 0;
+}
+
+.nav-media-hide,
+.nav-media-show{
+    background-color: rgb(17, 16, 16);
+    color: white;
+    backdrop-filter: blur(10);
+    width: 100vw;
+}
+
+.nav-media-hide{
+    position: absolute;
+    transform: translateY(-180px);
+    transition: 1s ease;
+    left: 0;
+}
+
+.nav-media-show{
+    transition: 1s ease;
+    position: absolute;
+    left: 0;
+}
+
+@media screen and (max-width: 1020px) {
+    .nav-list{
+        display: none;
+    }
+    .nav-media{
+        display: block;
+    }
+    .media-cover{
+        display: block;
+    }
+    .nav-media-show{
+        position: absolute;
+        transform: translateY(200px);
+        transform: 1s ease;
+        z-index: 1;
+    }
+    .nav-media-hide{
+        transition: 1s ease;
+        z-index: 1;
+    }
+    .list-contain li{
+        text-align: left;
+        list-style: none;
+        line-height: 50px;
+    }
+    
+}
