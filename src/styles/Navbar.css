@@ -1,8 +1,9 @@
 .navbar{
     padding: 10px 20px;
     position: sticky;
+    /* position: fixed; */
     top: 0;
-    /* width: 100%; */
+    /* width: inherit; */
     background-color: white;
     margin: 0px auto;
     z-index: 10;
@@ -23,6 +24,7 @@
 
 .nav-list ul li{
     list-style: none;
+    outline: none;
 }
 
 /* media Query */

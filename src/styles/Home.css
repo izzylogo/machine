@@ -1,18 +1,20 @@
 .home{
     height: 90vh;
-    background-image: url(../assets/backgroundmacchina.webp);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* margin-top: -20px; */
 }
 h2{
     font-size: 55px;
 }
 
-.home-contain{
-    max-width: 1480px;
+.home-top{
+    background-image: url(../assets/backgroundmacchina.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0px auto;
+    height: 100%;
+}
+
+.home-contain{
     text-align: left;
     /* display: flex;
     align-items: left;
@@ -22,8 +24,6 @@ h2{
 }
 
 .home-intro{
-    max-width: 1480px;
-    margin: 0px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,6 +56,12 @@ h2{
     font-weight: 600;
 }
 
+.hero-bottom{
+    background-color: white;
+    max-width: 1480px;
+    margin: 0px auto;
+}
+
 @media screen and (max-width: 1020px) {
     .home-intro{
         flex-direction: column;
@@ -70,11 +76,19 @@ h2{
     }
 }
 
+@media screen and (max-width: 750px) {
+    .home-left h2{
+        font-size: 40px;
+    }
+}
+
 .hero-bottom{
     display: flex;
     padding: 0px 20px;
     margin-top: -10px;
 }
+
+
 
 .home-info{
     width: 33.33333%;
@@ -93,6 +107,7 @@ h2{
     .hero-bottom{
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     hr{
@@ -123,6 +138,10 @@ h2{
 .section2-left{
     flex: 1;
     text-align: left;
+}
+
+.section2-left h2{
+    font-size: 45px;
 }
 
 .section2-left p{
@@ -172,7 +191,18 @@ h2{
     }
 }
 
+@media screen and (max-width: 750px) {
+    .section2-left h2{
+        font-size: 35px;
+    }
+
+    .section2-left div{
+        letter-spacing: 2px;
+    }
+}
+
 @media screen and (max-width: 600px) {
+    
     .cert-logo{
         /* flex-direction: column; */
         gap: 5px;
@@ -221,7 +251,7 @@ h2{
 }
 
 .grid-con img{
-    width: 400px;
+    width: 300px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -233,6 +263,15 @@ h2{
     }
 }
 
+@media screen and (max-width: 700px) {
+    .section3-contain{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .section3-contain h2{
+        font-size: 40px;
+    }
+}
 
     /* @media screen and (max-width: 1020px) {
         .section3-grid{
@@ -247,8 +286,12 @@ h2{
 .section4-contain{
     max-width: 1480px;
     margin: 0px auto;
-    padding: 0px 30px;
+    padding: 30px 30px;
     padding-bottom: 40px;
+}
+
+.section4-top{
+    padding-bottom: 60px;
 }
 
 .testimonal-cards{
@@ -258,7 +301,7 @@ h2{
 }
 
 .card{
-    border: 1px solid #171717a1;
+    border: 1px solid #17171771;
     border-radius: 2px;
     padding: 30px 40px;
     padding-bottom: 60px;
@@ -275,4 +318,246 @@ h2{
         flex-direction: column;
         justify-content: center;
     }
+}
+
+@media screen and (max-width: 700px) {
+    .section4-top h2{
+        font-size: 35px;
+    }
+}
+
+/* appiontment */
+
+.home-section5{
+    background-color: #171717;
+    color: white;
+}
+
+.section5-contain{
+    max-width: 1480px;
+    margin: 0px auto;
+    padding: 40px 30px;
+}
+
+.section5-top{
+    display: flex;
+    flex-direction: column;
+    /* align-items: start; */
+}
+
+.section5-top h2{
+    text-align: left;
+}
+
+.section5-top h2 span{
+    color: red;
+}
+
+.form-top, 
+.form-middle{
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 40px;
+}
+
+
+.field input,
+.field textarea{
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.form-desc{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-last{
+    margin-bottom: 30px;
+}
+
+.form-time-cover{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.section5-top button{
+    text-align: left;
+    max-width: fit-content;
+    padding: 15px 30px;
+    background-color: white;
+    border: none;
+    letter-spacing: 3px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .8s ease;
+}
+
+.section5-top button:hover {
+    background-color: red;
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    .form-top,
+    .form-middle,
+    .form-last{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .form-time-cover{
+        flex-direction: column;
+    }
+
+    .field{
+        display: flex;
+        flex-direction: column;
+        width: 100%;   
+    }
+
+    .field label{
+        margin-top: 60px;
+    }   
+}
+
+@media screen and (max-width: 700px) {
+    .section5-top h2{
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .form-top{
+        margin-top: 0px;
+    }
+}
+
+
+
+/* section6 */
+.section6-contain{
+    max-width: 1480px;
+    margin: 0px auto;
+}
+
+.section6-top{
+    padding: 60px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 770px) {
+    .section6-top{
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+.sec6-left{
+    text-align: left;
+}
+
+.sec6-left h4{
+    font-size: 30px;
+}
+
+.sec6-left h4{
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.sec6-left #h4{
+    margin-top: 0px;
+    border-bottom: 1px solid black;
+}
+
+.sec6-left ol{
+    display: flex;
+    gap: 15px;
+    padding-left: 0px;
+}
+
+.sec6-left ol li{
+    margin-right: 10px;
+    list-style: none;
+    font-size: 10px;
+}
+
+.sec6-right{
+    display: flex;
+    gap: 30px;
+    text-align: left;
+}
+
+@media screen and (max-width: 700px) {
+    .sec6-right{
+        flex-direction: column;
+    }   
+}
+
+.sec6-right h6{
+    font-weight: 300;
+    color: black;
+}
+
+.sec6-right h6 span{
+    text-decoration: underline;
+}
+
+.section6-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+    background-color: black;
+    color: white;
+}
+
+.sec6bot-left h6{
+    font-weight: 300;
+}
+
+.sec6bot-right{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sec-link{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sec-link span{
+    font-size: 10px;
+}
+@media screen and (max-width: 770px) {
+    .section6-bottom{
+        flex-direction: column;
+        align-items: start;
+    }   
 }
