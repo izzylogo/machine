@@ -1,0 +1,166 @@
+footer{
+    background-color: black;
+    margin-top: -10px;
+    color: white;
+}
+
+.footer-top{
+    text-align: left;
+    padding: 50px 20px;
+    display: flex;
+    align-items: last baseline;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 200px;
+}
+
+.footer-contain h6{
+    color: rgba(255, 255, 255, 0.851);
+}
+
+.foot-red{
+    color: red;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.foot-red div{
+    background-color: red;
+    width: 10px;
+    height: 20px;
+    transform: skewX(-30deg);
+}
+
+.foot-red span{
+    letter-spacing: 5px;
+}
+
+.footer-top-left h2{
+    margin: 5px 0px;
+}
+
+.footer-top-right img{
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    z-index: 1;
+}
+
+.line{
+    border-bottom: 50px solid red;
+	border-left: 25px solid transparent;
+	height: 0;
+	width: 50vw;
+    /* background-color: red; */
+    margin-left: auto;
+    right: 0;
+    bottom: 10px;
+    z-index: 0;
+    position: absolute;
+}
+
+@media screen and (max-width: 1020px) {
+    .footer-top-left h2{
+        font-size: 35px;
+    }
+
+    .footer-top-right img{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .footer-top-right img{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .footer-top-right img{
+        width: 200px;
+        bottom: 0px;
+    }
+
+    .line{
+        bottom: 0px;
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .footer-top{
+        padding-bottom: 100px;
+    }
+
+    .footer-top-right img{
+        width: 120px;
+    }
+
+    .line{
+        width: 90vw;
+    }
+}
+
+/* Footer-middle */
+.footer-middle{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.middle-left{
+    text-align: left;
+}
+
+.middle-center{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.middle-icon{
+    font-size: 40px;
+}
+
+.middle-right{
+    text-align: right;
+}
+
+@media screen and (max-width: 700px) {
+    .footer-middle{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .middle-right{
+        text-align: left;
+    }
+}
+
+.footer-last{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.last-left ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 0px;
+}
+
+.last-left ul li{
+    list-style: none;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 700px) {
+    .footer-last{
+        flex-direction: column;
+        align-items: start;
+    }
+}

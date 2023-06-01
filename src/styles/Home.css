@@ -57,7 +57,7 @@ h2{
 }
 
 .hero-bottom{
-    background-color: white;
+    /* background-color: white; */
     max-width: 1480px;
     margin: 0px auto;
 }
@@ -85,9 +85,8 @@ h2{
 .hero-bottom{
     display: flex;
     padding: 0px 20px;
-    margin-top: -10px;
+    margin-top: -9px;
 }
-
 
 
 .home-info{
@@ -411,6 +410,9 @@ h2{
     text-transform: uppercase;
     cursor: pointer;
     transition: .8s ease;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 3px;
 }
 
 .section5-top button:hover {

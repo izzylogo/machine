@@ -1,0 +1,144 @@
+.contact-contain{
+   
+}
+
+.contact-info{
+    text-align: left;
+    
+    padding: 10px 40px;
+    max-width: 1480px;
+    margin: 0px auto;
+}
+
+.contact-info h2{
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.contact-info-bottom{
+    display: flex;
+    gap: 20px;
+    margin-top: -10px;
+    background-color: white;
+    max-width: 1480px;
+    margin: 0px auto;
+}
+
+.contact-info-bottom .info{
+    width: 33.33333%;
+    padding: 25px 37px;
+}
+
+.info-top{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 920px) {
+
+    hr{
+        display: none;
+    }
+    .contact-info-bottom .info{
+        border-left: 1px solid black;
+        padding: 0px 10px;
+    } 
+}
+
+@media screen and (max-width: 770px) {
+    .contact-info-bottom{
+        flex-direction: column;
+        align-items: left;
+        gap: 30px;
+    }
+
+    hr{
+        width: 100%;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact-info h2{
+        font-size: 30px;
+    }
+}
+
+.contact-form{
+    background-color: black;
+    color: rgba(255, 255, 255, 0.908);
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.contact-form-contain h2{
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.form-contain{
+    max-width: 1480px;
+    margin: 0px auto;   
+    /* padding: 10px 40px; */
+}
+.contact-form-top{
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+
+
+.input-cover{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.input-cover input,
+.contact-form-bottom textarea{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+    .contact-form-contain h2{
+        font-size: 35px;
+    }
+}
+
+@media screen and  (max-width: 770px) {
+    .contact-form-top{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form-bottom{
+        margin-top: 20px;
+    }
+}
+
+.form-contain button{
+    background-color: white;
+    border: none;
+    padding: 15px 30px;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-transform: uppercase;
+    transition: .6s ease;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.form-contain button:hover{
+    background-color: red;
+    color: white;
+}
