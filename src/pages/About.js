@@ -4,6 +4,8 @@ import logos from '../assets/about-logo.svg'
 import man from '../assets/about-man.webp'
 import { FaCarAlt } from 'react-icons/fa'
 import {TbQuote} from 'react-icons/tb'
+import Footer from '../components/Footer'
+
 
 
 const About = () => {
@@ -52,7 +54,7 @@ const About = () => {
           </div>
         </div>
         <div className="about-quality">
-          <div className="qualit-contain">
+          <div className="quality-contain">
             <div className="quality-words">
               <h1>quality</h1>
               <h2>why choose us</h2>
@@ -97,6 +99,7 @@ const About = () => {
               </div>
             </div>
           </div>
+          <Footer/>
         </div>
       </div>
     </div>

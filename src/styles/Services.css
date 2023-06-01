@@ -1,0 +1,126 @@
+.service-contain-first{
+    display: flex;
+    /* align-items: baseline; */
+    gap: 60px;
+    padding: 10px 20px;
+    padding-top: 60px;
+    max-width: 1480px;
+    margin: 0px auto;
+}
+
+.service-first-left{
+    text-align: left;
+    flex: 1;
+}
+
+.service-first-right{
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    text-align: left;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: max-content;
+    padding: 20px 0px;
+}
+
+.service-first-left h2{
+    margin-top: 0px;
+    line-height: 50px;
+    font-size: 53px;
+}
+
+.serv-first-det h6{
+    margin-top: 0px;
+    font-size: 16px;
+}
+
+.serv-icon{
+    font-size: 30px;
+}
+
+.serv-first-det button{
+    background-color: black;
+    padding: 20px 25px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+    .service-contain-first{
+        gap: 20px;
+    }
+
+    .service-first-left h2{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .service-contain-first{
+        flex-direction: column;
+    }
+
+    .service-first-left h2{
+        font-size: 30px;
+    }
+}
+
+.service-contain-second{
+    background-color: black;
+    color: white;
+}
+
+.service-contain-second-cover{
+    max-width: 1480px;
+    margin: 0px auto;
+    padding: 60px 20px;
+    display: flex;
+    gap: 20px;
+    text-align: left;
+}
+
+.serv-second-left h2{
+    line-height: 60px;
+    font-size: 50px;
+}
+
+.ser-sec-det{
+    border-left: 1px solid white;
+    padding-left: 20px;
+}
+
+.ser-sec-det p{
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.793);
+}
+
+.serv-con{
+    margin-left: 30px;
+    border-bottom: 1px solid white;
+    max-width: fit-content;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+@media screen and (max-width: 1020px) {
+    .serv-second-left h2{
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .service-contain-second-cover{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .serv-second-left h2{
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
