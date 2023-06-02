@@ -3,12 +3,14 @@ import '../styles/Contact.css'
 import {FaPhone} from 'react-icons/fa'
 import { BsArrowRight } from 'react-icons/bs'
 import Footer from '../components/Footer'
+import Hero from '../components/Hero'
 
 
 const Contact = () => {
   return (
     <div className='contact'>
       <div className="contact-contain">
+        <Hero/>
         <div className="contact-info">
           <h2 className="info-head">Location & <br /> information</h2>
           <div className="contact-info-bottom">
@@ -66,9 +68,9 @@ const Contact = () => {
               <button>send <BsArrowRight className='rightarrow'/></button>
             </div>
           </div>
+        <Footer/>
         </div>
       </div>
-      <Footer/>
     </div>
   )
 }

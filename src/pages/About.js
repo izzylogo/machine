@@ -5,6 +5,7 @@ import man from '../assets/about-man.webp'
 import { FaCarAlt } from 'react-icons/fa'
 import {TbQuote} from 'react-icons/tb'
 import Footer from '../components/Footer'
+import Hero from '../components/Hero'
 
 
 
@@ -12,6 +13,7 @@ const About = () => {
   return (
     <div className='about'>
       <div className="about-contain">
+        <Hero/>
         <div className="about-info">
           <h2>who we are</h2>
           <div className="about-info-details">

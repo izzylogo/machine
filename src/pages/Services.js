@@ -2,11 +2,13 @@ import React from 'react'
 import '../styles/Services.css'
 import { FaPhone } from 'react-icons/fa'
 import Footer from '../components/Footer'
+import Hero from '../components/Hero'
 
 const Services = () => {
   return (
     <div className='service'>
       <div className="service-contain">
+        <Hero/>
         <div className="service-contain-first">
           <div className="service-first-left">
             <h2>WHEEL ALIGNMENT & TIRE INSTALLATION</h2>
