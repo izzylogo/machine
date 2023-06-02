@@ -1,0 +1,154 @@
+.hero-contain-top{
+    display: flex;
+    /* height: 60vh; */
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.hero-left{
+    max-width: 30%;
+    flex: 1;
+    display: flex;
+    align-items: left;
+    padding: 60px 20px;
+    /* position: relative; */
+}
+
+.hero-contain-bottom-cover{
+    position: absolute;
+    bottom: 5%;
+    /* left: 10vw; */
+    background-color: white;
+    padding: 10px 40px;
+    text-align: left;
+    width: 40%;
+}
+
+.hero-contain-bottom-cover h1{
+    font-size: 60px;
+    /* width: fit-content; */
+    text-transform: uppercase;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.hero-contain-bottom-cover p{
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 4px;
+}
+
+.hero-right{
+    flex: 1;
+    max-width: 70%;
+    padding: 30px 0px;
+         
+    /* height: 100vh; */
+}
+
+.hero-right-img{
+    flex: 1;
+    background-image: url('../assets/contactbackground.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* width: 100%; */
+    height: 30vh;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.hero-contain-bottom{
+    display: none;
+}
+
+
+
+.hero-contain-bottom-contain h1{
+    font-size: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+    .hero-left{
+        flex: 1;
+    }
+
+    .hero-contain-bottom-cover p{
+        letter-spacing: 0px;
+    }
+
+    .hero-contain-bottom-cover h1{
+        font-size: 45px;
+    }
+
+    .hero-right{
+        flex: 5;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .hero-contain-top{
+        flex-direction: column;
+    }
+
+    .hero-left{
+        display: none;
+    }
+
+    .hero-contain-bottom{
+        display: block;
+        max-width: 100vw;
+        position: relative;
+    }
+
+    .hero-media-cover{
+        position: absolute;
+        bottom: -100px;
+        display: flex;
+        align-items: center;
+        right: 0;
+        left: 0;
+    }
+    
+    .hero-bottom-media{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        padding: 20px 30px;
+        width: 90vw;
+        margin: 0px auto;
+        background-color: white;
+        text-align: left;
+    }
+    .hero-bottom-media p{
+        letter-spacing: 4px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .hero-bottom-media h1{
+        font-size: 45px;
+        text-transform: uppercase;
+        margin-top: 0px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 20px 0px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .hero-bottom-media{
+        max-width: 80vw;
+    }
+
+    .hero-right-img{
+        background-image: url('../assets/contactbackground.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
