@@ -69,6 +69,12 @@
     }
 }
 
+@media screen and (max-width: 770px) {
+    .service-contain-first{
+        padding-top: 150px;
+    }
+}
+
 .service-contain-second{
     background-color: black;
     color: white;

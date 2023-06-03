@@ -93,6 +93,8 @@
 @media screen and (max-width: 770px) {
     .hero-contain-top{
         flex-direction: column;
+        margin-bottom: 0px;
+        height: fit-content;
     }
 
     .hero-left{

@@ -53,10 +53,15 @@ const Hero = (props) => {
             </div>
             <div className="hero-contain-bottom">
                 <div className="hero-media-cover">
-                    <div className="hero-bottom-media">
-                        <p>MACCHINA AUTO REPAIR IN NEW YORK</p>
-                        <h1>contact</h1>
-                    </div>
+                    <motion.div className="hero-bottom-media"
+                        initial={'offscreen'}
+                        whileInView={'onscreen'}
+                        viewport={{once:true, amount:0.3}}
+                        transition={{staggerChildren:0.5}}
+                    >
+                        <motion.p variants={pAni}>MACCHINA AUTO REPAIR IN NEW YORK</motion.p>
+                        <motion.h1 variants={p2Ani}>{props.head}</motion.h1>
+                    </motion.div>
                 </div>
             </div>
         </div>

@@ -66,7 +66,7 @@ const Home = () => {
             <p>Feel free to call us.</p>
           </div>
           <hr />
-          <div className="home-info">
+          <div className="home-info second">
             <BsCalendar size={30}/>
             <h4>GET FREE APPIONTMENT</h4>
             <p>Feel Diagnosis & Brake Checks</p>

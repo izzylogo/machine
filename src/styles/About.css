@@ -86,6 +86,14 @@
     }
 }
 
+@media screen and (max-width: 700px) {
+    .about-info{
+        padding-bottom: 300px;
+        padding-top: 200px;
+        margin-top: -30px;
+    }
+}
+
 .about-info-right-bottom:hover{
     color: red;
     border-bottom: 1px solid red;
@@ -175,6 +183,12 @@
     .about-certified-det{
         flex-direction: column;
         padding-bottom: -60px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .about-certified{
+        padding-top: 200px;
     }
 }
 

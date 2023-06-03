@@ -124,8 +124,26 @@ h2{
 
     hr{
         width: 100%;
-    }
+    }   
+}
+
+@media screen and (max-width: 770px) {
     
+    .hero-bottom{
+        align-items: flex-start;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .home-info{
+        padding-left: 0px;
+    }
+
+    .hero-bottom .second{
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        width: 80vw;
+    }
 }
 
 
@@ -360,6 +378,12 @@ h2{
 @media screen and (max-width: 980px) {
     .back-car{
         background-attachment: scroll;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .back-car{
+        height: 70%;
     }
 }
 
