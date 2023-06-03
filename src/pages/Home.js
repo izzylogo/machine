@@ -10,23 +10,53 @@ import {MdLocationOn} from 'react-icons/md'
 import logos from '../assets/certificate-01.svg'
 import servpic from '../assets/service1.webp'
 import { testimonial } from '../constants'
+import {motion, variants} from 'framer-motion'
 
+
+const spanAni={
+  offscreen:{y: 90, opacity: 0},
+  onscreen:{y: 0,
+    opacity: [0, 1],
+    transition: {type: 'spring',
+    bounce: 0.2,
+    delay: 1,
+    duration: 1.5}
+  }
+}
+
+const h2Ani={
+  offscreen:{y: -100, opacity: 0},
+  onscreen:{y: 0,
+    opacity: [0, 0.2, 0.5, 0.8, 1],
+    transition: {type: 'spring',
+    bounce: 0.2,
+    delay: 0.5,
+    duration: 1.5}
+  }
+}
 
 const Home = () => {
   return (
     <div className='home'>
       {/* Hero Section */}
-      <div className="home-contain">
+      <motion.div 
+        initial={'offscreen'}
+        whileInView={'onscreen'}
+        viewport={{once:true, amount:0.3}}
+        transition={{staggerChildren:0.5}}
+      className="home-contain">
         <div className="home-top">
           <div className="home-intro">
             <div className="home-left">
-              <h2>KEEPING YOU ON THE ROAD WITH SERVICE YOU CAN TRUST</h2>
-              <button>EXPLORE OUR SERVICES</button>
+              <motion.h2 variants={h2Ani}>KEEPING YOU ON THE ROAD WITH SERVICE YOU CAN TRUST</motion.h2>
+              <motion.button  
+                variants={spanAni}
+              >EXPLORE OUR SERVICES <BsArrowRight fontSize={20} className='rightarrow'/></motion.button>
             </div>
             <div className="home-right"></div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       <div className="hero-bottom">
           <hr/>
@@ -53,12 +83,17 @@ const Home = () => {
 
 
       <div className='home-section2'>
-        <div className="section2-top">
-          <div className="section2-left">
+        <motion.div className="section2-top"
+          initial={'offscreen'}
+          whileInView={'onscreen'}
+          viewport={{once:true, amount:0.3}}
+          transition={{staggerChildren:0.5}}
+        >
+          <motion.div className="section2-left" variants={spanAni}>
             <h2>WE UNDERSTAND HOW IMPORTANT IT IS TO FIND THE RIGHT AUTO SERVICE</h2>
             <p>Car repairs and maintenance can be expensive and no one wants to have pay to repair damage caused by shoddy repair service. When you bring your car into our auto shop, you won’t have to worry because our staff is comprised of ASE certified technicians who are committed to making sure you have a safe dependable car.</p>
-            <div>MORE ABOUT US</div>
-          </div>
+            <div className='section2-left-bottom'>MORE ABOUT US</div>
+          </motion.div>
           <div className="section2-right">
             <h5>WE ARE CERTIFICATED:</h5>
             <div className="cert-logo">
@@ -73,7 +108,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <div className="ferrari">
@@ -98,8 +133,45 @@ const Home = () => {
       {/* our servives home */}
       <div className="home-section3">
         <div className="section3-contain">
-          <h2>OUR SERVICES</h2> <br />
-          <p>VIEW ALL SERVICES</p>
+          <motion.h2
+            initial={{ opacity: 0, 
+              y: 50, 
+              opacity: [0, 0.2, 0.5, 0.8, 1],
+              transition: {type: 'spring',
+              bounce: 0.2,
+              delay: 1.1,
+              duration: 2.5}
+            }}
+            whileInView={{ 
+              opacity: 1, 
+              y: 0,
+              opacity: [0, 0.2, 0.5, 0.8, 1],
+              transition: {type: 'spring',
+              bounce: 0.2,
+              delay: 1.1,
+              duration: 2.5} 
+            }}
+            viewport={{ once: true, amount: 0.4 }}
+          >OUR SERVICES</motion.h2> <br />
+          <motion.p
+            initial={{ opacity: 0,
+              y: 50, 
+              opacity: [0, 0.2, 0.5, 0.8, 1],
+              transition: {type: 'spring',
+              bounce: 0.2,
+              delay: 1.3,
+              duration: 1}
+            }}
+            whileInView={{ opacity: 1,
+              y: 0, 
+              opacity: [0, 0.2, 0.5, 0.8, 1],
+              transition: {type: 'spring',
+              bounce: 0.2,
+              delay: 1.3,
+              duration: 1}
+            }}
+            viewport={{ once: true, amount: 0.4 }}
+          >VIEW ALL SERVICES</motion.p>
           <div className="section3-grid">
             <div className="grid-contain">
               <div className="grid-con con1">
@@ -149,7 +221,24 @@ const Home = () => {
       <div className="home-section4">
         <div className="section4-contain">
           <div className="section4-top">
-            <h2>100% APPROVED BY CUSTOMERS</h2>
+            <motion.h2
+              initial={{ opacity: 0,
+                y: 50, 
+                opacity: [0, 0.2, 0.5, 0.8, 1],
+                transition: {type: 'spring',
+                bounce: 0.2,
+                delay: 1.3,
+                duration: 1}
+              }}
+              whileInView={{ opacity: 1,
+                y: 0, 
+                opacity: [0, 0.2, 0.5, 0.8, 1],
+                transition: {type: 'spring',
+                bounce: 0.2,
+                delay: 1.3,
+                duration: 1}
+              }}
+            >100% APPROVED BY CUSTOMERS</motion.h2>
             <div className="testimonal-cards">
               {testimonial.map((test) => (
                 <div className="card">
