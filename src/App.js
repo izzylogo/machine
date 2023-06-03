@@ -6,8 +6,11 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import Hero from './components/Hero';
+import { useState } from 'react';
 
 function App() {
+  const [head, setHead] = useState('')
+
   return (
     <BrowserRouter>
       <div className="App">
@@ -18,7 +21,7 @@ function App() {
             <Route path='/about' element={<About/>}/>
             <Route path='/contact' element={<Contact/>}/>
             <Route path='/services' element={<Services/>}/>
-            <Route path='/hero' element={<Hero/>}/> 
+            <Route path='/hero' element={<Hero head={head}/>}/> 
           </Routes>
         </div>
       </div>

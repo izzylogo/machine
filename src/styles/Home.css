@@ -86,6 +86,8 @@ h2{
     display: flex;
     padding: 0px 20px;
     margin-top: -9px;
+    text-align: left;
+    margin-bottom: -9px;
 }
 
 
@@ -127,11 +129,12 @@ h2{
 .section2-top{
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     max-width: 1480px;
     margin: 0px auto;
     padding: 0px 30px;
     gap: 100px;
+    padding-bottom: 500px;
 }
 
 .section2-left{
@@ -182,11 +185,18 @@ h2{
 
 @media screen and (max-width: 1020px) {
     .section2-right{
+        width: 100%;
         gap: 10px;
     }
 
     .section2-top{
         flex-direction: column;
+        align-self: start;
+    }
+
+    .cert-logo{
+        justify-content: left;
+        gap: 40px;
     }
 }
 
@@ -216,12 +226,86 @@ h2{
     }
 }
 
+/* ferrari */
+.ferrari{
+    max-width: 1480px;
+    /* padding: 0px 20px; */
+    margin: 0px auto;
+    position: relative;
+}
+
+.ferrari-cover{
+    position: absolute;
+    width: 90%;
+    height: 60vh;
+    max-width: 0px auto;
+    background-image: url('../assets/ferrari.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: translateY(-50%) translateX(3%);
+    padding: 50px 20px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /* display: flex; */
+}
+
+.ferrari-cover-details{
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    gap: 100px;
+    height: 100%;
+    /* text-align: bottom; */
+}
+
+.ferrari-cover-det{
+    color: white;
+    text-align: left;
+}
+
+.ferrari-cover-det h4{
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 800px) {
+    .ferrari-cover{
+        height: fit-content;
+        transform: translateY(-50%) translateX(1%);    }
+    
+    .ferrari-cover-details{
+        gap: 20px;
+        flex-direction: column;
+        text-align: left;
+        align-items: baseline;
+        padding: 10px 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ferrari-cover{
+        max-width: 80%;
+        transform: translateY(-50%) translateX(8%);
+    }    
+}
+
+@media screen and (max-width: 480px) {
+    .ferrari-cover{
+        transform: translateY(-50%) translateX(5%);
+    }
+}
+
 /* Services home */
 
 .section3-contain{
     max-width: 1480px;
     margin: 0px auto;
-    padding-top: 150px;
+    padding-top: 450px;
     padding-bottom: 150px;
     padding-left: 30px;
     padding-right: 30px;
@@ -241,30 +325,156 @@ h2{
 .section3-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 50px;
 }
+
 
 .grid-con{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px; */
+    height: 100%;
 }
 
-.grid-con img{
-    width: 300px;
+.back-car{
+    background-image: url('../assets/redbenz.webp');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
 }
 
-@media screen and (max-width: 1200px) {
-    .section3-grid{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
+@media screen and (max-width: 980px) {
+    .back-car{
+        background-attachment: scroll;
     }
 }
 
-@media screen and (max-width: 700px) {
+.back-car-circle{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-car-circle h5{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 90px 20px;
+    border-radius: 50%;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .5s ease;
+    cursor: pointer;
+    font-size: 20px;
+    width: 230px;
+    text-align: left;
+}
+
+.back-car-circle h5:hover{
+    background-color: black;
+}
+
+.grid-inner{
+    opacity: 0;
+    transition: .5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    height: 100%;
+    /* padding: 50px 20px; */
+}
+
+.grid-con:hover .grid-inner{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.451);
+}
+
+.con1{
+    background-image: url('../assets/service2.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* padding: 50px 20px; */
+}
+.con2{
+    background-image: url('../assets/service3.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* padding: 50px 20px; */
+}
+.con3{
+    background-image: url('../assets/service1.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* padding: 50px 20px; */
+}
+
+
+.plus-cover{
+    background-color: red;
+    width: fit-content;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 100px;
+}
+
+.grid-contain h4{
+    color: white;
+    text-align: left;
+    font-weight: 600;
+    font-size: 23px;
+    max-width: 90%; 
+    margin: 0px auto;
+    padding: 50px 20px;
+}
+
+.grid-contain p{
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: none;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1000px) {
+    .grid-con{
+        height: 80%;
+    }
+
+    /* .grid-contain{
+        margin-top: 80px;
+    } */
+
+    .grid-contain h4{
+        font-size: 18px;
+    }
+}
+
+
+
+@media screen and (max-width: 730px) {
+    .section3-grid{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .section3-contain{
-        padding-top: 50px;
+        padding-top: 500px;
         padding-bottom: 50px;
     }
     .section3-contain h2{
@@ -378,6 +588,12 @@ h2{
     outline: none;
     border: none;
     border-bottom: 1px solid white;
+    transition: .5s ease;
+}
+
+.field input:hover,
+.field textarea:hover{
+    border-bottom: 1px solid red;
 }
 
 .form-desc{
@@ -410,7 +626,7 @@ h2{
     text-transform: uppercase;
     cursor: pointer;
     transition: .8s ease;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: 3px;
 }

@@ -4,11 +4,13 @@ import logo from '../assets/macchina.svg'
 import {AiFillPhone} from 'react-icons/ai'
 import {FaPhone} from 'react-icons/fa'
 import {FaQuoteLeft} from 'react-icons/fa'
-import {BsFacebook} from 'react-icons/bs'
+import {BsCalendar, BsFacebook, BsPlus, BsPlusCircleFill} from 'react-icons/bs'
 import {BsArrowRight} from 'react-icons/bs'
+import {MdLocationOn} from 'react-icons/md'
 import logos from '../assets/certificate-01.svg'
 import servpic from '../assets/service1.webp'
 import { testimonial } from '../constants'
+
 
 const Home = () => {
   return (
@@ -35,15 +37,15 @@ const Home = () => {
           </div>
           <hr />
           <div className="home-info">
-            <FaPhone size={30}/>
-            <h4>CALL US NOW 715.387.5006</h4>
-            <p>Feel free to call us.</p>
+            <BsCalendar size={30}/>
+            <h4>GET FREE APPIONTMENT</h4>
+            <p>Feel Diagnosis & Brake Checks</p>
           </div>
           <hr />
           <div className="home-info">
-            <FaPhone size={30}/>
-            <h4>CALL US NOW 715.387.5006</h4>
-            <p>Feel free to call us.</p>
+            <MdLocationOn size={30}/>
+            <h4>FIND US ON THE MAP</h4>
+            <p>New York, 1286 Ruumu Nanor</p>
           </div>
           <hr/>
         </div>
@@ -74,26 +76,72 @@ const Home = () => {
         </div>
       </div>
 
+      <div className="ferrari">
+        <div className="ferrari-cover">
+          <div className="ferrari-cover-details">
+            <div className="ferrari-cover-det">
+              <h4>01</h4>
+              <p>1YR/12K WARRANTY <br /> PARTS AND LABOR</p>
+            </div>
+            <div className="ferrari-cover-det">
+              <h4>02</h4>
+              <p>FREE SHUTTLE <br /> SERVICE</p>
+            </div>
+            <div className="ferrari-cover-det">
+              <h4>03</h4>
+              <p>24H TOWING <br /> SERVICE</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* our servives home */}
       <div className="home-section3">
         <div className="section3-contain">
           <h2>OUR SERVICES</h2> <br />
           <p>VIEW ALL SERVICES</p>
           <div className="section3-grid">
-            <div className="grid-con">
-              <img src={servpic} alt="" />
+            <div className="grid-contain">
+              <div className="grid-con con1">
+                <div className="grid-inner">
+                  <div className="plus-cover">
+                    <BsPlus color='white'/>
+                  </div>
+                  <h4>ANNUAL CHECKUPS FROM YOUR PHYSICIAN KEEP YOU IN GOOD HEALTH</h4>
+                </div>
+              </div>
               <p>Diagnostic</p>
             </div>
-            <div className="grid-con">
-              <img src={servpic} alt="" />
-              <p>Diagnostic</p>
+            <div className="grid-contain">
+              <div className="grid-con con2">
+                <div className="grid-inner">
+                  <div className="plus-cover">
+                    <BsPlus color='white'/>
+                  </div>
+                  <h4>OUR TECHNICIANS ARE EXPERTS IN PROVIDING HIGH-QUALITY TIRE SERVICES</h4>
+                </div>
+              </div>
+              <p>tires & wheels</p>
             </div>
-            <div className="grid-con">
-              <img src={servpic} alt="" />
-              <p>Diagnostic</p>
+            <div className="grid-contain">
+              <div className="grid-con con3">
+                <div className="grid-inner">
+                  <div className="plus-cover">
+                    <BsPlus color='white'/>
+                  </div>
+                  <h4>WE USE STATE-OF-THE-ART SCAN TOOL EQUIPMENT TO PERFORM ENGINE DIAGNOSTICS</h4>
+                </div>
+              </div>
+              <p>engine</p>
             </div>
           </div>
 
+        </div>
+      </div>
+
+      <div className="back-car">
+        <div className="back-car-circle">
+          <h5>book an <br /> appiontment <BsArrowRight fontSize={30} className='rightarrow'/> </h5>
         </div>
       </div>
 

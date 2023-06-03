@@ -2,6 +2,12 @@
     background-color: rgba(9, 9, 9, 0.974);
     color: white;
     padding: 60px 20px;
+    padding-bottom: 500px;
+}
+
+.about-info-cover{
+    max-width: 1480px;
+    margin: 0px auto;
 }
 
 .about-info h2{
@@ -85,10 +91,36 @@
     border-bottom: 1px solid red;
 }
 
+.about-img{
+    /* width: 100vw; */
+    max-width: 1480px;
+    /* padding: 0px 20px; */
+    margin: 0px auto;
+    position: relative;
+}
+
+
+.about-img img{
+    position: absolute;
+    width: 95%;
+    transform: translateY(-50%) translateX(3%);
+    /* padding: 0px 20px; */
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
 .about-certified{
     text-align: left;
     padding: 60px 20px;
     background-color: #F3F3F3;
+    padding-top: 500px;
+}
+
+.about-certified-cover{
+    max-width: 1480px;
+    margin: 0px auto;
 }
 
 .about-certified h2{

@@ -22,17 +22,47 @@
     background-color: white;
     max-width: 1480px;
     margin: 0px auto;
+    margin-bottom: 90px;
 }
 
 .contact-info-bottom .info{
     width: 33.33333%;
     padding: 25px 37px;
+    text-transform: uppercase;
+    padding-left: 0px;
 }
 
 .info-top{
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.info-top h4{
+    font-size: 16px;
+    letter-spacing: 4px;
+}
+
+.info button{
+    background-color: rgb(0, 0, 0);
+    border: none;
+    padding: 20px 15px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.info button:hover{
+    background-color: rgb(237, 2, 2);
+    color: white;
 }
 
 @media screen and (max-width: 920px) {
@@ -76,11 +106,13 @@
 .contact-form-contain h2{
     line-height: 50px;
     text-transform: uppercase;
+    color: white;
 }
 
 .form-contain{
     max-width: 1480px;
-    margin: 0px auto;   
+    margin: 0px auto;  
+    margin-top: 70px; 
     /* padding: 10px 40px; */
 }
 .contact-form-top{
@@ -90,7 +122,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
 }
-
 
 
 .input-cover{
@@ -104,8 +135,14 @@
     background-color: transparent;
     border: none;
     outline: none;
-    border-bottom: 1px solid white;
-    margin-bottom: 40px;
+    border-bottom: 2px solid white;
+    margin-bottom: 100px;
+    transition: .5s ease;
+}
+
+.input-cover input:hover,
+.contact-form-bottom textarea:hover{
+    border-bottom: 2px solid red;
 }
 
 @media screen and (max-width: 1000px) {
@@ -127,16 +164,17 @@
 .form-contain button{
     background-color: white;
     border: none;
-    padding: 15px 30px;
+    padding: 20px 35px;
     color: black;
     display: flex;
     align-items: center;
     gap: 5px;
     text-transform: uppercase;
     transition: .6s ease;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    cursor: pointer;
 }
 
 .form-contain button:hover{

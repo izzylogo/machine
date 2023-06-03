@@ -1,16 +1,17 @@
 import React from 'react'
 import '../styles/Contact.css'
 import {FaPhone} from 'react-icons/fa'
-import { BsArrowRight } from 'react-icons/bs'
+import { BsArrowRight, BsCalendarEvent, BsCarFrontFill } from 'react-icons/bs'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
+import background from '../assets/contactbackground.webp'
 
 
 const Contact = () => {
   return (
     <div className='contact'>
       <div className="contact-contain">
-        <Hero/>
+        <Hero head='contact' background={background} />
         <div className="contact-info">
           <h2 className="info-head">Location & <br /> information</h2>
           <div className="contact-info-bottom">
@@ -25,18 +26,18 @@ const Contact = () => {
             <hr />
             <div className="info">
               <div className="info-top">
-                <FaPhone size={30}/>
-                <h4>715.387.5006</h4>
+                <BsCarFrontFill size={30}/>
+                <h4>hours of operation</h4>
               </div>
-              <p>new york, 1286 ruumu manor <br /><span>service@email.com</span>.</p>
+              <p>MON – FRI: 8:30 AM – 6:00 PM <br /><span>SAT: 8:30 AM – 2:00 PM</span>.</p>
             </div>
             <hr />
             <div className="info">
               <div className="info-top">
-                <FaPhone size={30}/>
-                <h4>715.387.5006</h4>
+                <BsCalendarEvent size={30}/>
+                <h4>free appiontment</h4>
               </div>
-              <p>new york, 1286 ruumu manor <br /><span>service@email.com</span>.</p>
+              <button>get free appiontment   <BsArrowRight size={20}/></button>
             </div>
             <hr />  
           </div>
@@ -65,7 +66,7 @@ const Contact = () => {
                   <textarea name="" id="message" cols="30"></textarea>
                   </div>
               </form>
-              <button>send <BsArrowRight className='rightarrow'/></button>
+              <button>send <BsArrowRight size={15} className='rightarrow'/></button>
             </div>
           </div>
         <Footer/>

@@ -49,7 +49,7 @@
 
 .hero-right-img{
     flex: 1;
-    background-image: url('../assets/contactbackground.webp');
+    /* background-image: url('../assets/contactbackground.webp'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

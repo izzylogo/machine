@@ -19,12 +19,20 @@
 
 .nav-list ul{
     display: flex;
-    gap: 10px;
+    gap: 30px;
 }
 
 .nav-list ul li{
     list-style: none;
     outline: none;
+    font-weight: 500;
+    font-size: 18px;
+    transition: .5s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.nav-list ul li:hover{
+    border-bottom: 3px solid rgba(219, 3, 3, 0.887);
 }
 
 /* media Query */

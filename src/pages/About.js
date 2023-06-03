@@ -6,6 +6,8 @@ import { FaCarAlt } from 'react-icons/fa'
 import {TbQuote} from 'react-icons/tb'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
+import aboutimg from '../assets/aboutimg.webp'
+import backgroundabout from '../assets/redbenz.webp'
 
 
 
@@ -13,43 +15,52 @@ const About = () => {
   return (
     <div className='about'>
       <div className="about-contain">
-        <Hero/>
+        <Hero head='ABOUT' background={backgroundabout}/>
         <div className="about-info">
-          <h2>who we are</h2>
-          <div className="about-info-details">
-            <div className="about-info-left">
-              <p>John Smith became the owner of Macchina on June 1st, 1989. Over the years, John has always stated that he did not choose auto repair as his profession, but it was more like vice versa.</p>
-              <br />
-              <p>Macchina offers top-quality auto repair and maintenance services to residents of Minneapolis and surrounding communities. We have a team of skilled and ASE-certified technicians who only use the latest diagnostic tools and equipment in the automotive industry. We are a NAPA Auto Care Center where our technicians receive ongoing training to deliver the highest quality of service possible. When you bring your car to us for a repair or maintenance service, we’ll treat you with respect and dignity. We won’t bother you with any unnecessary expenses.</p>
-            </div>
-            <div className="about-info-right">
-              <div className="about-info-right-cover">
-                <p>From transmission repair to oil changes, we’re here for all of your auto repair needs! Our shop is a full-service, auto repair facility that offers free Wi-Fi, complimentary drinks, and an exceptional customer service.</p>
+          <div className="about-info-cover">
+            <h2>who we are</h2>
+            <div className="about-info-details">
+              <div className="about-info-left">
+                <p>John Smith became the owner of Macchina on June 1st, 1989. Over the years, John has always stated that he did not choose auto repair as his profession, but it was more like vice versa.</p>
                 <br />
-                <p>We are always willing to go the extra mile to educate our customers! We’ll even bring you out back to physically show you what’s going on with your vehicle.</p>
-                <br />
-                <p>Please come by and let us take care of all your car care needs. We’re here to help!</p>
+                <p>Macchina offers top-quality auto repair and maintenance services to residents of Minneapolis and surrounding communities. We have a team of skilled and ASE-certified technicians who only use the latest diagnostic tools and equipment in the automotive industry. We are a NAPA Auto Care Center where our technicians receive ongoing training to deliver the highest quality of service possible. When you bring your car to us for a repair or maintenance service, we’ll treat you with respect and dignity. We won’t bother you with any unnecessary expenses.</p>
               </div>
-              <div className='about-info-right-bottom'>contact us</div>
+              <div className="about-info-right">
+                <div className="about-info-right-cover">
+                  <p>From transmission repair to oil changes, we’re here for all of your auto repair needs! Our shop is a full-service, auto repair facility that offers free Wi-Fi, complimentary drinks, and an exceptional customer service.</p>
+                  <br />
+                  <p>We are always willing to go the extra mile to educate our customers! We’ll even bring you out back to physically show you what’s going on with your vehicle.</p>
+                  <br />
+                  <p>Please come by and let us take care of all your car care needs. We’re here to help!</p>
+                </div>
+                <div className='about-info-right-bottom'>contact us</div>
+              </div>
             </div>
           </div>
         </div>
+        <div className="about-img">
+          <div className="img-cover">
+            <img src={aboutimg} alt="" />
+          </div>
+        </div>
         <div className="about-certified">
-          <h2>TEAM OF CERTIFIED <br /> TECHNICIANS</h2>
-          <div className="about-certified-det">
-            <p className="about-cert-left">
-              We’re car people. That means you care about your car, and so do we. Our team of certified technicians will ensure you receive the best practices in the industry. Come and see for yourself. When you bring your car to us for maintenance or repair, we’ll treat you with respect and dignity. We won’t worry you with unnecessary expenses.
-            </p>
-            <div className="about-cert-logo">
-              <div className="about-cert-logos">
-                <div className="about-cert-cover">
-                  <img src={logos} alt='Logos o certificate'/>
-                </div>
-                <div className="about-cert-cover">
-                  <img src={logos} alt='Logos o certificate'/>
-                </div>
-                <div className="about-cert-cover">
-                  <img src={logos} alt='Logos o certificate'/>
+          <div className="about-certified-cover">
+            <h2>TEAM OF CERTIFIED <br /> TECHNICIANS</h2>
+            <div className="about-certified-det">
+              <p className="about-cert-left">
+                We’re car people. That means you care about your car, and so do we. Our team of certified technicians will ensure you receive the best practices in the industry. Come and see for yourself. When you bring your car to us for maintenance or repair, we’ll treat you with respect and dignity. We won’t worry you with unnecessary expenses.
+              </p>
+              <div className="about-cert-logo">
+                <div className="about-cert-logos">
+                  <div className="about-cert-cover">
+                    <img src={logos} alt='Logos o certificate'/>
+                  </div>
+                  <div className="about-cert-cover">
+                    <img src={logos} alt='Logos o certificate'/>
+                  </div>
+                  <div className="about-cert-cover">
+                    <img src={logos} alt='Logos o certificate'/>
+                  </div>
                 </div>
               </div>
             </div>
