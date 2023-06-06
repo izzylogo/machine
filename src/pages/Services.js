@@ -4,6 +4,12 @@ import { FaPhone } from 'react-icons/fa'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import backgroundserv from '../assets/serviicebdg.webp'
+import mot from '../assets/MOT.png'
+import paint from '../assets/paintwork.png'
+import polish from '../assets/polish.png'
+import repair from '../assets/repair.png'
+import courtesy from '../assets/courtesy.png'
+import detailing from '../assets/detailing.png'
 
 const Services = () => {
   return (
@@ -13,6 +19,61 @@ const Services = () => {
           head='SERVICES'
           background={backgroundserv}
         />
+        <div className="service-top-det">
+          <div className="service-top-list">
+          <h2>List of services we offer</h2>
+            <div className="different-list">
+              <div className="serves">
+                <div className="serve-img">
+                  <img src={mot} alt="mot" />
+                </div>
+                <h4>mot</h4>
+              </div>
+              <div className="serves">
+                <div className="serve-img">
+                  <img src={paint} alt="mot" />
+                </div>
+                <h4>paintwork</h4>
+              </div>
+              <div className="serves">
+                <div className="serve-img">
+                  <img src={repair} alt="mot" />
+                </div>
+                <h4>accident repair</h4>
+              </div>
+              <div className="serves">
+                <div className="serve-img">
+                  <img src={polish} className='polish' alt="mot" />
+                </div>
+                <h4>professional polishes</h4>
+              </div>
+              <div className="serves">
+                <div className="serve-img">
+                  <img src={mot} alt="mot" />
+                </div>
+                <h4>detailing</h4>
+              </div>
+              <div className="serves">
+                <div className="serve-img">
+                  <img src={detailing} alt="mot" />
+                </div>
+                <h4>welding</h4>
+              </div>
+              <div className="serves">
+                <div className="serve-img">
+                  <img src={courtesy} alt="mot" />
+                </div>
+                <h4>courtesy cars</h4>
+              </div>
+              <div className="serves">
+                <div className="serve-img">
+                  <img src={mot} alt="mot" />
+                </div>
+                <h4>recovery</h4>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="service-contain-first">
           <div className="service-first-left">
             <h2>WHEEL ALIGNMENT & TIRE INSTALLATION</h2>

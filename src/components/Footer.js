@@ -14,7 +14,7 @@ const Footer = () => {
               <span>CAR REPAIRS AND MAINTENANCE</span>
             </div>
             <h2>CALL US NOW</h2>
-            <h2>715-387-50</h2>
+            <h2>07710 607 508</h2>
           </div>
           <div className="footer-top-right">
             <img src={man} alt="" />
@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
         <div className="footer-middle">
           <div className="middle-left">
-            <h6>NEW YORK, 1286 RUUMU MANOR</h6>
+            <h6>Newcastle, Unit 8 Rosevale Road</h6>
             <h6>get direction</h6>
           </div>
           <div className="middle-center">

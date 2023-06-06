@@ -1,6 +1,5 @@
 import React from 'react'
 import '../styles/Hero.css'
-import background from '../assets/contactbackground.webp'
 import { motion, variants } from 'framer-motion'
 
 
@@ -41,7 +40,7 @@ const Hero = (props) => {
                     >
                         <motion.p
                             variants={pAni}
-                        >MACCHINA AUTO REPAIR IN NEW YORK</motion.p>
+                        >COSMIN PAINT & BODY REPAIR IN UNITED KINGDOM</motion.p>
                         <motion.h1 variants={p2Ani}>{props.head}</motion.h1>
                     </motion.div>
                 </div>

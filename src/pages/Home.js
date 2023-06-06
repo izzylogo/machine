@@ -1,16 +1,16 @@
 import React from 'react'
 import '../styles/Home.css'
 import logo from '../assets/macchina.svg'
-import {AiFillPhone} from 'react-icons/ai'
 import {FaPhone} from 'react-icons/fa'
 import {FaQuoteLeft} from 'react-icons/fa'
-import {BsCalendar, BsFacebook, BsPlus, BsPlusCircleFill} from 'react-icons/bs'
+import {BsCalendar, BsFacebook, BsPlus} from 'react-icons/bs'
 import {BsArrowRight} from 'react-icons/bs'
 import {MdLocationOn} from 'react-icons/md'
 import logos from '../assets/certificate-01.svg'
-import servpic from '../assets/service1.webp'
 import { testimonial } from '../constants'
 import {motion, variants} from 'framer-motion'
+import { Link } from 'react-router-dom'
+import video from '../assets/csmvideo.mp4'
 
 
 const spanAni={
@@ -62,7 +62,7 @@ const Home = () => {
           <hr/>
           <div className="home-info">
             <FaPhone size={30}/>
-            <h4>CALL US NOW 715.387.5006</h4>
+            <h4>CALL US NOW 07710 607 508</h4>
             <p>Feel free to call us.</p>
           </div>
           <hr />
@@ -75,7 +75,7 @@ const Home = () => {
           <div className="home-info">
             <MdLocationOn size={30}/>
             <h4>FIND US ON THE MAP</h4>
-            <p>New York, 1286 Ruumu Nanor</p>
+            <p>Newcastle, Unit 8 Rosevale Road</p>
           </div>
           <hr/>
         </div>
@@ -111,8 +111,13 @@ const Home = () => {
         </motion.div>
       </div>
 
+
       <div className="ferrari">
         <div className="ferrari-cover">
+          {/* this is the code for the video */}
+          {/* <video autoPlay loop muted plays-inline>
+            <source src={video} type='video/mp4'/>
+          </video> */}
           <div className="ferrari-cover-details">
             <div className="ferrari-cover-det">
               <h4>01</h4>
@@ -134,7 +139,7 @@ const Home = () => {
       <div className="home-section3">
         <div className="section3-contain">
           <motion.h2
-            initial={{ opacity: 0, 
+            initial={{
               y: 50, 
               opacity: [0, 0.2, 0.5, 0.8, 1],
               transition: {type: 'spring',
@@ -142,8 +147,7 @@ const Home = () => {
               delay: 1.1,
               duration: 2.5}
             }}
-            whileInView={{ 
-              opacity: 1, 
+            whileInView={{  
               y: 0,
               opacity: [0, 0.2, 0.5, 0.8, 1],
               transition: {type: 'spring',
@@ -154,7 +158,7 @@ const Home = () => {
             viewport={{ once: true, amount: 0.4 }}
           >OUR SERVICES</motion.h2> <br />
           <motion.p
-            initial={{ opacity: 0,
+            initial={{ 
               y: 50, 
               opacity: [0, 0.2, 0.5, 0.8, 1],
               transition: {type: 'spring',
@@ -162,7 +166,7 @@ const Home = () => {
               delay: 1.3,
               duration: 1}
             }}
-            whileInView={{ opacity: 1,
+            whileInView={{
               y: 0, 
               opacity: [0, 0.2, 0.5, 0.8, 1],
               transition: {type: 'spring',
@@ -176,35 +180,35 @@ const Home = () => {
             <div className="grid-contain">
               <div className="grid-con con1">
                 <div className="grid-inner">
-                  <div className="plus-cover">
+                  <Link to='/appiontment' className="plus-cover">
                     <BsPlus color='white'/>
-                  </div>
+                  </Link>
                   <h4>ANNUAL CHECKUPS FROM YOUR PHYSICIAN KEEP YOU IN GOOD HEALTH</h4>
                 </div>
               </div>
-              <p>Diagnostic</p>
+              <p>recovery</p>
             </div>
             <div className="grid-contain">
               <div className="grid-con con2">
                 <div className="grid-inner">
-                  <div className="plus-cover">
+                  <Link to='/appiontment' className="plus-cover">
                     <BsPlus color='white'/>
-                  </div>
+                  </Link>
                   <h4>OUR TECHNICIANS ARE EXPERTS IN PROVIDING HIGH-QUALITY TIRE SERVICES</h4>
                 </div>
               </div>
-              <p>tires & wheels</p>
+              <p>MOT</p>
             </div>
             <div className="grid-contain">
               <div className="grid-con con3">
                 <div className="grid-inner">
-                  <div className="plus-cover">
+                  <Link to='/appiontment' className="plus-cover">
                     <BsPlus color='white'/>
-                  </div>
+                  </Link>
                   <h4>WE USE STATE-OF-THE-ART SCAN TOOL EQUIPMENT TO PERFORM ENGINE DIAGNOSTICS</h4>
                 </div>
               </div>
-              <p>engine</p>
+              <p>accident repairs</p>
             </div>
           </div>
 
@@ -212,9 +216,9 @@ const Home = () => {
       </div>
 
       <div className="back-car">
-        <div className="back-car-circle">
+        <Link to='/appiontment' className="back-car-circle">
           <h5>book an <br /> appiontment <BsArrowRight fontSize={30} className='rightarrow'/> </h5>
-        </div>
+        </Link>
       </div>
 
       {/* Testimonials */}
@@ -222,7 +226,7 @@ const Home = () => {
         <div className="section4-contain">
           <div className="section4-top">
             <motion.h2
-              initial={{ opacity: 0,
+              initial={{
                 y: 50, 
                 opacity: [0, 0.2, 0.5, 0.8, 1],
                 transition: {type: 'spring',
@@ -230,7 +234,7 @@ const Home = () => {
                 delay: 1.3,
                 duration: 1}
               }}
-              whileInView={{ opacity: 1,
+              whileInView={{
                 y: 0, 
                 opacity: [0, 0.2, 0.5, 0.8, 1],
                 transition: {type: 'spring',
@@ -315,7 +319,7 @@ const Home = () => {
             <div className="sec6-left">
               <img src={logo} alt="macchinalogo" />
               <br />
-              <h4>715 387 5006</h4>
+              <h4>07710 607 508</h4>
               <h4 id='h4'>GET DIRECTION</h4>
               <ol>
                 <li>FAQ</li>
@@ -324,7 +328,7 @@ const Home = () => {
               </ol>
             </div>
             <div className="sec6-right">
-              <h6>NEW YORK, 1286 RUUMU MANOR <br /> <span>SERVICE@EMAIL.COM</span></h6>
+              <h6>Newcastle, Unit 8 Rosevale Road <br /> <span>cosminn.ursache@yahoo.co.</span></h6>
               <h6>MON – FRI: 8:30 AM – 6:00 PM <br />SAT: 8:30 AM – 2:00 PM</h6>
             </div>
           </div>

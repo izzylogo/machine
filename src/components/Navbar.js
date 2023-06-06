@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import '../styles/Navbar.css'
-import logo from '../assets/macchina.svg'
+import logo from '../assets/car-logo.png'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
         <div className="navbar-contain">
-            <img src={logo} alt="logo" />
+            <Link to='/'><img src={logo} alt="logo" /></Link>
             <div className="nav-list">
                 <ul>
                     <Link to='/'><li>Home</li></Link>

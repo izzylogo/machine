@@ -8,6 +8,7 @@ import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import aboutimg from '../assets/aboutimg.webp'
 import backgroundabout from '../assets/redbenz.webp'
+import twocars from '../assets/csmtwocars.jpg'
 
 
 

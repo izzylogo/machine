@@ -5,6 +5,7 @@
     top: 0;
     /* width: inherit; */
     background-color: white;
+    /* background-color: black; */
     margin: 0px auto;
     z-index: 10;
 }
@@ -15,6 +16,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.navbar-contain a{
+    max-width: 140px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-contain img{
+    width: 100%;
 }
 
 .nav-list ul{
