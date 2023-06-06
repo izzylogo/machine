@@ -41,7 +41,7 @@ const Footer = () => {
             <ul>
               <li>faq</li>
               <li>reviews</li>
-              <li>cntact</li>
+              <li>contact</li>
             </ul>
           </div>
           <div className="last-right">

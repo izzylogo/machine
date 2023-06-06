@@ -1,8 +1,10 @@
 .navbar{
     padding: 10px 20px;
-    position: sticky;
-    /* position: fixed; */
+    /* position: sticky; */
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     /* width: inherit; */
     background-color: white;
     /* background-color: black; */
@@ -43,6 +45,10 @@
 }
 
 .nav-list ul li:hover{
+    border-bottom: 3px solid rgba(219, 3, 3, 0.887);
+}
+
+.nav-list ul a li:active{
     border-bottom: 3px solid rgba(219, 3, 3, 0.887);
 }
 
@@ -144,6 +150,10 @@
         text-align: left;
         list-style: none;
         line-height: 50px;
+    }
+
+    .navbar-contain img{
+        width: 80%;
     }
     
 }

@@ -183,3 +183,13 @@
     background-color: red;
     color: white;
 }
+
+.last{
+    background-color: #171717;
+    margin-top: -210px;
+}
+
+.last-contain{
+    max-width: 1480px;
+    margin: 0px auto;
+}

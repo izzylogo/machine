@@ -21,6 +21,7 @@ h2{
     flex-direction: column;
     justify-content: center; */
     height: 100%;
+    padding-top: 50px;
 }
 
 .home-intro{
@@ -119,7 +120,8 @@ h2{
     .hero-bottom{
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: start;
+        text-align: left;
     }
 
     hr{
@@ -137,6 +139,12 @@ h2{
 
     .home-info{
         padding-left: 0px;
+        /* max-width: fit-content; */
+    }
+
+    .home-info h4,
+    .home-info p{
+        width: 100vw;
     }
 
     .hero-bottom .second{
@@ -240,7 +248,9 @@ h2{
 }
 
 @media screen and (max-width: 600px) {
-    
+    .section2-top{
+        padding-bottom: 300px;
+    }
     .cert-logo{
         /* flex-direction: column; */
         gap: 5px;
@@ -333,8 +343,9 @@ h2{
         max-width: 80%;
         transform: translateY(-50%) translateX(8%);
         display: flex;
-        align-items: center;
+        /* align-items: center; */
         background-position: unset;
+        flex-direction: column;
     }    
 }
 
@@ -384,7 +395,7 @@ h2{
 }
 
 .back-car{
-    background-image: url('../assets/csm22.jpg');
+    background-image: url('../assets/redbenz.webp');
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -515,8 +526,6 @@ h2{
         font-size: 18px;
     }
 }
-
-
 
 @media screen and (max-width: 730px) {
     .section3-grid{
@@ -721,8 +730,17 @@ h2{
     .form-top{
         margin-top: 0px;
     }
+
+    .field{
+        margin-top: 0px;
+    }
 }
 
+@media screen and (max-width: 500px) {
+    .section5-contain{
+        padding: 60px 15px;
+    }
+}
 
 
 /* section6 */

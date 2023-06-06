@@ -69,7 +69,11 @@ const Contact = () => {
               <button>send <BsArrowRight size={15} className='rightarrow'/></button>
             </div>
           </div>
-        <Footer/>
+        </div>
+        <div className="last">
+          <div className="last-contain">
+            <Footer/>
+          </div>
         </div>
       </div>
     </div>

@@ -73,8 +73,8 @@ const Appiontment = () => {
                 </div>
 
                 <button>Send <BsArrowRight/></button>
-                <Footer/>
             </div>
+            <Footer/>
         </div>
     </div>
   )

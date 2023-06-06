@@ -187,7 +187,7 @@ const Home = () => {
                 </div>
               </div>
               <p>recovery</p>
-            </div>
+            </div> 
             <div className="grid-contain">
               <div className="grid-con con2">
                 <div className="grid-inner">
@@ -287,7 +287,7 @@ const Home = () => {
                 </div>
                 <div className="form-photo field">
                   <label htmlFor="photo">Attach photo or Video</label>
-                  <input type="file" id='photo' />
+                  <input type="file" id='photo'  />
                 </div>
                 <div className="form-time-cover">
                   <div className="form-date field">

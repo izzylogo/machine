@@ -35,10 +35,10 @@ const Navbar = () => {
             <div className="media-cover">
               <div className={toggle ? "nav-media-show" : "nav-media-hide"}>
                   <ul className='list-contain'>
-                      <Link to='/'><li>Home</li></Link>
-                      <Link to='/about'><li>About</li></Link>
-                      <Link to='/services'><li>Services</li></Link>
-                      <Link to='/contact'><li>Contact</li></Link>
+                      <Link onClick={() => setToggle(prevToggle => !prevToggle)}  to='/'><li>Home</li></Link>
+                      <Link onClick={() => setToggle(prevToggle => !prevToggle)} to='/about'><li>About</li></Link>
+                      <Link onClick={() => setToggle(prevToggle => !prevToggle)} to='/services'><li>Services</li></Link>
+                      <Link onClick={() => setToggle(prevToggle => !prevToggle)} to='/contact'><li>Contact</li></Link>
                   </ul>
               </div>
             </div>
