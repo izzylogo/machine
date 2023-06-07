@@ -114,6 +114,16 @@ footer{
 
 .middle-left{
     text-align: left;
+    text-transform: uppercase;
+}
+
+.middle-left h6{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.middle-left h6:nth-child(2){
+    text-decoration: underline;
 }
 
 .middle-center{
@@ -124,10 +134,21 @@ footer{
 
 .middle-icon{
     font-size: 40px;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.middle-icon:hover{
+    color: red;
 }
 
 .middle-right{
     text-align: right;
+}
+
+.middle-right h6{
+    font-size: 13px;
+    font-weight: 400;
 }
 
 @media screen and (max-width: 700px) {
@@ -158,6 +179,16 @@ footer{
 .last-left ul li{
     list-style: none;
     text-transform: uppercase;
+    transition: .5s ease;
+}
+
+.last-left ul li:hover{
+    color: red;
+}
+
+.last-right h6{
+    font-size: 15px;
+    font-weight: 400;
 }
 
 @media screen and (max-width: 700px) {

@@ -15,6 +15,7 @@
 .navbar-contain{
     max-width: 1480px;
     margin: 0px auto;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;

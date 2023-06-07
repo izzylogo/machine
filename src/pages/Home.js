@@ -1,11 +1,12 @@
 import React from 'react'
 import '../styles/Home.css'
 import logo from '../assets/macchina.svg'
-import {FaPhone} from 'react-icons/fa'
+import {FaPhone, FaTwitterSquare} from 'react-icons/fa'
 import {FaQuoteLeft} from 'react-icons/fa'
-import {BsCalendar, BsFacebook, BsPlus} from 'react-icons/bs'
+import {BsCalendar, BsFacebook, BsPlus, BsYelp} from 'react-icons/bs'
 import {BsArrowRight} from 'react-icons/bs'
 import {MdLocationOn} from 'react-icons/md'
+import {FaSquareTwitter} from 'react-icons/fa'
 import logos from '../assets/certificate-01.svg'
 import { testimonial } from '../constants'
 import {motion, variants} from 'framer-motion'
@@ -128,6 +129,25 @@ const Home = () => {
               <p>FREE SHUTTLE <br /> SERVICE</p>
             </div>
             <div className="ferrari-cover-det">
+              <h4>03</h4>
+              <p>24H TOWING <br /> SERVICE</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="ferrari-media">
+        <div className="ferrari-media-cover">
+          <div className="ferrari-media-contain">
+            <div className="ferrari-media-det">
+              <h4>01</h4>
+              <p>1YR/12K WARRANTY <br /> PARTS AND LABOR</p>
+            </div>
+            <div className="ferrari-media-det">
+              <h4>02</h4>
+              <p>FREE SHUTTLE <br /> SERVICE</p>
+            </div>
+            <div className="ferrari-media-det">
               <h4>03</h4>
               <p>24H TOWING <br /> SERVICE</p>
             </div>
@@ -322,9 +342,9 @@ const Home = () => {
               <h4>07710 607 508</h4>
               <h4 id='h4'>GET DIRECTION</h4>
               <ol>
-                <li>FAQ</li>
-                <li>REVIEWS</li>
-                <li>CONTACT</li>
+                <Link to='/about'><li>about</li></Link>
+                <Link to='/service'><li>service</li></Link>
+                <Link to='/contact'><li>contact</li></Link>
               </ol>
             </div>
             <div className="sec6-right">
@@ -342,12 +362,12 @@ const Home = () => {
                 <span>FACEBOOK</span>
               </div>
               <div className="sec-link">
-                <BsFacebook className='facebook' fontSize={10}/>
-                <span>FACEBOOK</span>
+                <FaTwitterSquare className='facebook' fontSize={10}/>
+                <span>TWITTER</span>
               </div>
               <div className="sec-link">
-                <BsFacebook className='facebook' fontSize={10}/>
-                <span>FACEBOOK</span>
+                <BsYelp className='facebook' fontSize={10}/>
+                <span>YELP</span>
               </div>
             </div>
           </div>

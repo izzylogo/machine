@@ -271,6 +271,7 @@ h2{
     /* padding: 0px 20px; */
     margin: 0px auto;
     position: relative;
+    display: none;
 }
 
 .ferrari-cover{
@@ -353,6 +354,60 @@ h2{
     .ferrari-cover{
         background-size: cover !important;
         transform: translateY(-50%) translateX(5%);
+    }
+}
+
+/* ferrari media */
+.ferrari-media{
+    max-width: 1480px;
+    margin: 0px auto;
+    position: relative;
+    padding: 20px 20px  ;
+}
+
+.ferrari-media-contain{
+    position: absolute;
+    width: 90%;
+    height: 50vh;
+    max-width: 0px auto;
+    background-image: url('../assets/ferrari.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    transform: translateY(-50%) translateX(3%);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.ferrari-media-det{
+    text-align: left;
+    padding: 10px 20px;
+    color: white;
+}
+
+.ferrari-media-det h4{
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 600px) {
+    .ferrari-media-contain{
+        max-width: 80%;
+        transform: translateY(-50%) translateX(8%);
+        display: flex;
+        background-position: unset;
+        flex-direction: column;
+    }    
+}
+
+@media screen and (max-width: 400px) {
+    .ferrari-media-contain{
+        max-width: 70%;
+        height: 40vh;
     }
 }
 
@@ -791,6 +846,14 @@ h2{
     margin-right: 10px;
     list-style: none;
     font-size: 10px;
+    text-transform: uppercase;
+    transition: .5s ease;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.sec6-left ol li:hover{
+    color: red;
 }
 
 .sec6-right{

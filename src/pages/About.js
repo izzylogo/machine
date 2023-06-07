@@ -2,13 +2,14 @@ import React from 'react'
 import '../styles/About.css'
 import logos from '../assets/about-logo.svg'
 import man from '../assets/about-man.webp'
-import { FaCarAlt } from 'react-icons/fa'
-import {TbQuote} from 'react-icons/tb'
+import { FaCarAlt, FaUsersCog } from 'react-icons/fa'
+import {TbCircleCheck, TbQuote} from 'react-icons/tb'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import aboutimg from '../assets/aboutimg.webp'
 import backgroundabout from '../assets/redbenz.webp'
 import twocars from '../assets/csmtwocars.jpg'
+import { Link } from 'react-router-dom'
 
 
 
@@ -78,19 +79,19 @@ const About = () => {
             <div className="quality-cards">
               <hr />
               <div className="quality-card">
-                <FaCarAlt/>
+                <FaUsersCog/>
                 <h5>6,000+</h5>
                 <p>Satisfied Clients</p>
               </div>
               <hr />
               <div className="quality-card">
                 <FaCarAlt/>
-                <h5>6,000+</h5>
-                <p>Satisfied Clients</p>
+                <h5>20+</h5>
+                <p>Years Of Experience</p>
               </div>
               <hr />
               <div className="quality-card">
-                <FaCarAlt/>
+                <TbCircleCheck/>
                 <h5>6,000+</h5>
                 <p>Satisfied Clients</p>
               </div>
@@ -109,7 +110,7 @@ const About = () => {
               <div className="about-exp-bot-left">
                 <TbQuote color='red' className='quo'/>
                 <h3>EXPERT SERVICE WHEN YOU NEED IT. WE'LL BE THERE FOR YOU IN TIME. WE'LL TOW YOUR CAR, FIX IT AND GET YOU BACK ON THE ROAD. THIS IS OUR GUARANTEE TO YOU.</h3>
-                <button>get free appiontment</button>
+                <button><Link to='/appiontment'>get free appiontment</Link></button>
               </div>
             </div>
           </div>

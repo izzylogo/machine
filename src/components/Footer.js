@@ -2,6 +2,7 @@ import React from 'react'
 import { BsFacebook, BsTwitter, BsYelp } from 'react-icons/bs'
 import man from '../assets/footerimg.webp'
 import '../styles/Footer.css'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -39,9 +40,9 @@ const Footer = () => {
         <div className="footer-last">
           <div className="last-left">
             <ul>
-              <li>faq</li>
-              <li>reviews</li>
-              <li>contact</li>
+              <Link to='/about'><li>about</li></Link>
+              <Link to='/service'><li>service</li></Link>
+              <Link to='/contact'><li>contact</li></Link>
             </ul>
           </div>
           <div className="last-right">
