@@ -136,7 +136,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="ferrari-media">
+      {/* <div className="ferrari-media">
         <div className="ferrari-media-cover">
           <div className="ferrari-media-contain">
             <div className="ferrari-media-det">
@@ -153,7 +153,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* our servives home */}
       <div className="home-section3">

@@ -271,13 +271,13 @@ h2{
     /* padding: 0px 20px; */
     margin: 0px auto;
     position: relative;
-    display: none;
+    /* display: none; */
 }
 
 .ferrari-cover{
     position: absolute;
     width: 90%;
-    height: 50vh;
+    height: fit-content;
     max-width: 0px auto;
     background-image: url('../assets/ferrari.webp');
     background-repeat: no-repeat;
@@ -368,7 +368,7 @@ h2{
 .ferrari-media-contain{
     position: absolute;
     width: 90%;
-    height: 50vh;
+    height: fit-content;
     max-width: 0px auto;
     background-image: url('../assets/ferrari.webp');
     background-repeat: no-repeat;
