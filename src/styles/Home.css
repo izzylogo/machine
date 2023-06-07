@@ -116,7 +116,14 @@ h2{
     margin-top: 2px;
 }
 
+.home-info h4,
+.home-info p{
+    width: initial;
+}
+
+
 @media screen and (max-width: 1020px) {
+
     .hero-bottom{
         flex-direction: column;
         justify-content: center;
@@ -139,12 +146,12 @@ h2{
 
     .home-info{
         padding-left: 0px;
-        /* max-width: fit-content; */
+        width: 80%;
     }
 
     .home-info h4,
     .home-info p{
-        width: 100vw;
+        width: initial !important;
     }
 
     .hero-bottom .second{
@@ -153,6 +160,24 @@ h2{
         width: 80vw;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .home-info{
+
+    }
+
+    /* .home-info h4,
+    .home-info p{
+        width: 60vw;
+    } */
+}
+
+/* @media screen and (max-width: 500px) {
+    .home-info h4,
+    .home-info p{
+        max-width: 50vw;
+    }
+} */
 
 
 /* section 2 */
@@ -271,7 +296,7 @@ h2{
     /* padding: 0px 20px; */
     margin: 0px auto;
     position: relative;
-    /* display: none; */
+    display: none;
 }
 
 .ferrari-cover{
@@ -365,6 +390,7 @@ h2{
     padding: 20px 20px  ;
 }
 
+
 .ferrari-media-contain{
     position: absolute;
     width: 90%;
@@ -375,16 +401,20 @@ h2{
     background-size: cover;
     background-position: center;
     padding: 50px 20px;
-    transform: translateY(-50%) translateX(3%);
+    transform: translateY(-70%) translateX(3%);
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-top: 200px;
 }
 
 .ferrari-media-det{
     text-align: left;
-    padding: 10px 20px;
+    padding: 10px 60px;
     color: white;
 }
 
@@ -392,6 +422,14 @@ h2{
     font-weight: 700;
     font-size: 30px;
     margin-bottom: 0px;
+}
+
+@media screen and (max-width: 800px) {
+    .ferrari-media-contain{
+        flex-direction: column;
+        padding-top: 50px;
+        max-width: 85%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -404,10 +442,26 @@ h2{
     }    
 }
 
+@media screen and (max-width: 500px) {
+    .ferrari-media-contain{
+        background-position: center;
+        padding: 30px 20px;
+        transform: translateY(-50%) translateX(6%);
+        height: fit-content;
+        align-items: start;
+    }
+
+    .ferrari-media-det h4{
+        margin-top: 0px;
+    }
+}
+
 @media screen and (max-width: 400px) {
     .ferrari-media-contain{
         max-width: 70%;
-        height: 40vh;
+        height: fit-content;
+        transform: translateY(-50%) translateX(9%);
+        background-position: center;
     }
 }
 

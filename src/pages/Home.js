@@ -113,12 +113,12 @@ const Home = () => {
       </div>
 
 
+      {/* this is the code for the video */}
+      {/* <video autoPlay loop muted plays-inline>
+        <source src={video} type='video/mp4'/>
+      </video> */}
       <div className="ferrari">
         <div className="ferrari-cover">
-          {/* this is the code for the video */}
-          {/* <video autoPlay loop muted plays-inline>
-            <source src={video} type='video/mp4'/>
-          </video> */}
           <div className="ferrari-cover-details">
             <div className="ferrari-cover-det">
               <h4>01</h4>
@@ -136,7 +136,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* <div className="ferrari-media">
+      <div className="ferrari-media">
         <div className="ferrari-media-cover">
           <div className="ferrari-media-contain">
             <div className="ferrari-media-det">
@@ -153,7 +153,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* our servives home */}
       <div className="home-section3">
